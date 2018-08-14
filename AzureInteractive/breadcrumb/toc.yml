@@ -1,0 +1,14 @@
+items:
+- name: Azure
+  tocHref: /azure/
+  topicHref: /azure/index
+  items:
+  - name: 函数
+    tocHref: /azure/functions/
+    topicHref: /azure/functions/home
+ms.openlocfilehash: 8e93e812972015e6ab57e66b4d7bc113ec0259ea
+ms.sourcegitcommit: e721422a57e6deb95245135fd9f4f5677c344d93
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "40079750"
