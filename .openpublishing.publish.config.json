@@ -12,12 +12,8 @@
       "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": [
-    "tysonn@microsoft.com",
-    "cfowler@microsoft.com",
-    "ggailey@microsoft.com",
-    "tdykstra@microsoft.com"
-  ],
+  "notification_subscribers": [],
+  "sync_notification_subscribers": [],
   "branches_to_filter": [
     "live",
     "master"
@@ -44,5 +40,6 @@
     }
   ],
   "branch_target_mapping": {},
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": false,
+  "targets": {}
 }
