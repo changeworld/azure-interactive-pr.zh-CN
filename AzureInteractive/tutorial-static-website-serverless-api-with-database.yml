@@ -1,0 +1,49 @@
+### YamlMime:Tutorial
+title: <span data-ttu-id="2fa97-101">在 Azure 中构建无服务器 Web 应用</span><span class="sxs-lookup"><span data-stu-id="2fa97-101">Build a serverless web app in Azure</span></span>
+metadata:
+  title: 在 Azure 中构建无服务器 Web 应用 | Microsoft Docs
+  description: 本教程介绍如何发布一个静态 Web 应用，该应用使用 Azure 的无服务器组件上传、分析和修改图像。
+  audience: Developer
+  level: Intermediate
+  displayType: two-column
+  interactive: azurecli
+  author: ggailey777
+  manager: cfowler
+  ms.service: multiple
+  ms.topic: interactive-tutorial
+  ms.date: 06/22/2018
+  ms.author: glenga
+  ms.openlocfilehash: d0bd4c0b4b1a6995e2d5148a4f49769aee0f4dc7
+  ms.sourcegitcommit: f96b5b10238122db9506f1a7c7f53ace9b28c293
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 08/24/2018
+  ms.locfileid: "40079053"
+items:
+- durationInMinutes: 1
+  content: >
+    [!INCLUDE [](./includes/intro.md)]
+- title: <span data-ttu-id="2fa97-104">在 Azure Blob 存储中创建 Web 应用</span><span class="sxs-lookup"><span data-stu-id="2fa97-104">Create a web app in Azure Blob storage</span></span>
+  durationInMinutes: 12
+  content: >
+    [!INCLUDE [](./includes/static-site.md)]
+- title: <span data-ttu-id="2fa97-105">使用 Azure Functions 将图像上传到 Blob 存储</span><span class="sxs-lookup"><span data-stu-id="2fa97-105">Upload images to Blob storage with Azure Functions</span></span>
+  durationInMinutes: 20
+  content: "[!INCLUDE [](./includes/upload-images.md)] \n"
+- title: <span data-ttu-id="2fa97-106">使用 Azure Functions 重设图像大小</span><span class="sxs-lookup"><span data-stu-id="2fa97-106">Resize images with Azure Functions</span></span>
+  durationInMinutes: 15
+  content: >
+    [!INCLUDE [](includes/resize-images.md)]
+- title: <span data-ttu-id="2fa97-107">使用 Azure Cosmos DB 存储图像元数据</span><span class="sxs-lookup"><span data-stu-id="2fa97-107">Store image metadata with Azure Cosmos DB</span></span>
+  durationInMinutes: 15
+  content: >
+    [!INCLUDE [](includes/store-images.md)]
+- title: <span data-ttu-id="2fa97-108">使用计算机视觉添加图像标题</span><span class="sxs-lookup"><span data-stu-id="2fa97-108">Add image captions with Computer Vision</span></span>
+  durationInMinutes: 15
+  content: >
+    [!INCLUDE [](includes/computer-vision.md)]
+- title: <span data-ttu-id="2fa97-109">添加身份验证</span><span class="sxs-lookup"><span data-stu-id="2fa97-109">Add authentication</span></span>
+  durationInMinutes: 15
+  content: >
+    [!INCLUDE [](includes/authentication.md)]
+- content: '[!INCLUDE [](includes/completed.md)]'
