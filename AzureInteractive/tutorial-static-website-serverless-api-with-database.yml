@@ -1,0 +1,49 @@
+### YamlMime:Tutorial
+title: 在 Azure 中构建无服务器 Web 应用
+metadata:
+  title: 在 Azure 中构建无服务器 Web 应用 | Microsoft Docs
+  description: 本教程介绍如何发布一个静态 Web 应用，该应用使用 Azure 的无服务器组件上传、分析和修改图像。
+  audience: Developer
+  level: Intermediate
+  displayType: two-column
+  interactive: azurecli
+  author: ggailey777
+  manager: cfowler
+  ms.service: multiple
+  ms.topic: interactive-tutorial
+  ms.date: 06/22/2018
+  ms.author: glenga
+  ms.openlocfilehash: d0bd4c0b4b1a6995e2d5148a4f49769aee0f4dc7
+  ms.sourcegitcommit: f96b5b10238122db9506f1a7c7f53ace9b28c293
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 08/24/2018
+  ms.locfileid: "40079053"
+items:
+- durationInMinutes: 1
+  content: >
+    [!INCLUDE [](./includes/intro.md)]
+- title: 在 Azure Blob 存储中创建 Web 应用
+  durationInMinutes: 12
+  content: >
+    [!INCLUDE [](./includes/static-site.md)]
+- title: 使用 Azure Functions 将图像上传到 Blob 存储
+  durationInMinutes: 20
+  content: "[!INCLUDE [](./includes/upload-images.md)] \n"
+- title: 使用 Azure Functions 重设图像大小
+  durationInMinutes: 15
+  content: >
+    [!INCLUDE [](includes/resize-images.md)]
+- title: 使用 Azure Cosmos DB 存储图像元数据
+  durationInMinutes: 15
+  content: >
+    [!INCLUDE [](includes/store-images.md)]
+- title: 使用计算机视觉添加图像标题
+  durationInMinutes: 15
+  content: >
+    [!INCLUDE [](includes/computer-vision.md)]
+- title: 添加身份验证
+  durationInMinutes: 15
+  content: >
+    [!INCLUDE [](includes/authentication.md)]
+- content: '[!INCLUDE [](includes/completed.md)]'
