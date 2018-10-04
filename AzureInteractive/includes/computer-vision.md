@@ -2,19 +2,19 @@
 title: include 文件
 description: include 文件
 services: functions
-author: tdykstra
+author: ggailey777
 manager: jeconnoc
 ms.service: multiple
 ms.topic: include
 ms.date: 06/21/2018
-ms.author: tdykstra
+ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: 7e51d3cd0533b4fb64d7dfa783af55266d536f54
-ms.sourcegitcommit: e721422a57e6deb95245135fd9f4f5677c344d93
+ms.openlocfilehash: f51b864cab14273c1e88dd85d22400e0e76ef770
+ms.sourcegitcommit: 81587470a181e314242c7a97cd0f91c82d4fe232
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "40079135"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47459986"
 ---
 目前，此应用程序是一个功能正常的库，允许上传和查看图像。 本模块介绍如何使用 Microsoft 认知服务中的计算机视觉 API，以便为上传的图像生成标题并将标题与图像元数据一起保存在 Cosmos DB 中。
 

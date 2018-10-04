@@ -2,19 +2,19 @@
 title: include 文件
 description: include 文件
 services: functions
-author: tdykstra
+author: ggailey777
 manager: jeconnoc
 ms.service: multiple
 ms.topic: include
 ms.date: 06/21/2018
-ms.author: tdykstra
+ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: d651fd3d03f2678d625e60f9ab1e9f59e623964f
-ms.sourcegitcommit: e721422a57e6deb95245135fd9f4f5677c344d93
+ms.openlocfilehash: 0f86f2698a3a0c1e20272c335b63faf03b4b92d6
+ms.sourcegitcommit: 81587470a181e314242c7a97cd0f91c82d4fe232
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "40079123"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47460018"
 ---
 在本教程中，请部署一个简单的 Web 应用程序，以便呈现基于 HTML 的用户界面。 应用程序可以通过无服务器后端来上传图像并自动获取说明它们的标题。
 

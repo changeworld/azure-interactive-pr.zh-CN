@@ -2,19 +2,19 @@
 title: include 文件
 description: include 文件
 services: functions
-author: tdykstra
+author: ggailey777
 manager: jeconnoc
 ms.service: multiple
 ms.topic: include
 ms.date: 06/21/2018
-ms.author: tdykstra
+ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: d1f9a07ce3d3b096b498e48b5c4f68c3454b2b37
-ms.sourcegitcommit: e721422a57e6deb95245135fd9f4f5677c344d93
+ms.openlocfilehash: 426a7287458a48d1bda220ad1a5f067be2ce77d6
+ms.sourcegitcommit: 81587470a181e314242c7a97cd0f91c82d4fe232
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "40079132"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47460035"
 ---
 可以通过 Azure 应用服务身份验证在 Azure 函数应用中获得统包式身份验证支持。 它与 Facebook、Twitter、Microsoft 帐户、Google 和 Azure Active Directory 无缝集成。 需添加应用服务身份验证来保护 Web 应用的后端 API。
 
@@ -34,7 +34,7 @@ ms.locfileid: "40079132"
     | **请求未经身份验证时的操作** | 使用 Azure Active Directory 登录 | 选择配置的身份验证方法（见下）。 |
     | **身份验证提供程序** | 请参阅下文 | 请参阅下文 |
     | **令牌存储** | 启用 | 允许应用服务存储和管理令牌。 |
-    | **允许的外部重定向 URL** | 应用程序的 URL，例如：https://firstserverlessweb.z4.web.core.windows.net/ | 在用户进行身份验证后，允许将应用服务重定向到的 URL。 |
+    | **允许的外部重定向 URL** | 应用程序的 URL，例如： https://firstserverlessweb.z4.web.core.windows.net/ | 在用户进行身份验证后，允许将应用服务重定向到的 URL。 |
 
 1. 选择“Azure Active Directory”，以便显示“Azure Active Directory 设置”。
 
