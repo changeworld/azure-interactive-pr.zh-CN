@@ -2,19 +2,19 @@
 title: include 文件
 description: include 文件
 services: functions
-author: tdykstra
+author: ggailey777
 manager: jeconnoc
 ms.service: multiple
 ms.topic: include
 ms.date: 06/21/2018
-ms.author: tdykstra
+ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: 56cfb4c2893977086309660f4f6941fd0d648913
-ms.sourcegitcommit: e721422a57e6deb95245135fd9f4f5677c344d93
+ms.openlocfilehash: 51c7d3e64424d499b473f3b138ce249a9cfd0182
+ms.sourcegitcommit: 81587470a181e314242c7a97cd0f91c82d4fe232
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "40079127"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47460071"
 ---
 要生成的应用程序是一个照片库。 它使用客户端 JavaScript 来调用 API，以便上传和显示图像。 在此模块中，请使用无服务器函数来创建 API，该函数生成用于上传图像的具有时间限制的 URL。 Web 应用程序使用 [Blob 存储 REST API](https://docs.microsoft.com/rest/api/storageservices/blob-service-rest-api) 通过生成的 URL 将图像上传到 Blob 存储。
 
@@ -36,12 +36,21 @@ Azure Functions 是一项用于运行无服务器函数的服务。 无服务器
 
 Azure 函数应用是一个或多个无服务器函数的容器。
 
-1. 在此前创建的资源组中使用唯一名称创建名为 **first-serverless-app** 的新 Azure 函数应用。 函数应用需要一个存储帐户；在本教程中，请使用现有的存储帐户。
+在此前创建的资源组中使用唯一名称创建名为 **first-serverless-app** 的新 Azure 函数应用。 函数应用需要一个存储帐户；在本教程中，请使用现有的存储帐户。
 
-    ```azurecli
-    az functionapp create -n <function app name> -g first-serverless-app -s <storage account name> -c westcentralus
-    ```
+```azurecli
+az functionapp create -n <function app name> -g first-serverless-app -s <storage account name> -c westcentralus
+```
 
+## <a name="configure-the-function-app"></a>配置函数应用
+
+本教程中的函数应用需要 1.x 版的 Functions 运行时。 将 `FUNCTIONS_WORKER_RUNTIME` 应用程序设置为 `~1` 会将函数应用固定到最新的 1.x 版本。 使用 [az functionapp config appsettings set](https://docs.microsoft.com/cli/azure/functionapp/config/appsettings#set) 命令设置应用程序设置。
+
+在以下 Azure CLI 命令中，<app_name> 是函数应用的名称。
+
+```azurecli
+az functionapp config appsettings set --name <function app name> --g first-serverless-app --settings FUNCTIONS_WORKER_RUNTIME=~1
+```
 
 ## <a name="create-an-http-triggered-serverless-function"></a>创建 HTTP 触发的无服务器函数
 
