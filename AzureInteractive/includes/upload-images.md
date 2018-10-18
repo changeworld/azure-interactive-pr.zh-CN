@@ -6,15 +6,15 @@ author: ggailey777
 manager: jeconnoc
 ms.service: multiple
 ms.topic: include
-ms.date: 06/21/2018
+ms.date: 10/12/2018
 ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: 51c7d3e64424d499b473f3b138ce249a9cfd0182
-ms.sourcegitcommit: 81587470a181e314242c7a97cd0f91c82d4fe232
+ms.openlocfilehash: 3779c2e130afa7ee8d5879f30a924e258b7a41e9
+ms.sourcegitcommit: fdb43556b8dcf67cb39c18e532b5fab7ac53eaee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47460071"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49315970"
 ---
 要生成的应用程序是一个照片库。 它使用客户端 JavaScript 来调用 API，以便上传和显示图像。 在此模块中，请使用无服务器函数来创建 API，该函数生成用于上传图像的具有时间限制的 URL。 Web 应用程序使用 [Blob 存储 REST API](https://docs.microsoft.com/rest/api/storageservices/blob-service-rest-api) 通过生成的 URL 将图像上传到 Blob 存储。
 
@@ -44,12 +44,12 @@ az functionapp create -n <function app name> -g first-serverless-app -s <storage
 
 ## <a name="configure-the-function-app"></a>配置函数应用
 
-本教程中的函数应用需要 1.x 版的 Functions 运行时。 将 `FUNCTIONS_WORKER_RUNTIME` 应用程序设置为 `~1` 会将函数应用固定到最新的 1.x 版本。 使用 [az functionapp config appsettings set](https://docs.microsoft.com/cli/azure/functionapp/config/appsettings#set) 命令设置应用程序设置。
+本教程中的函数应用需要 1.x 版的 Functions 运行时。 将 `FUNCTIONS_EXTENSION_VERSION` 应用程序设置为 `~1` 会将函数应用固定到最新的 1.x 版本。 使用 [az functionapp config appsettings set](https://docs.microsoft.com/cli/azure/functionapp/config/appsettings#set) 命令设置应用程序设置。
 
 在以下 Azure CLI 命令中，<app_name> 是函数应用的名称。
 
 ```azurecli
-az functionapp config appsettings set --name <function app name> --g first-serverless-app --settings FUNCTIONS_WORKER_RUNTIME=~1
+az functionapp config appsettings set --name <function app name> --g first-serverless-app --settings FUNCTIONS_EXTENSION_VERSION=~1
 ```
 
 ## <a name="create-an-http-triggered-serverless-function"></a>创建 HTTP 触发的无服务器函数
